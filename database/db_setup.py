@@ -10,7 +10,7 @@ class StudySession(Base):
     __tablename__ = 'study_sessions'
 
     id = Column(Integer, primary_key=True)
-    topic = Column(String(200), nullable=False)
+    subject = Column(String(200), nullable=False)  
     topic = Column(String(200), nullable=False)
     duration_minutes = Column(Float, nullable=False)
     completed = Column(Boolean, default=False)
